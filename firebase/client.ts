@@ -4,7 +4,7 @@ import { getAuth } from "firebase/auth";
 import {getFirestore} from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBTrN4tdtoMXnAEjKoif4wDv7EwhnPWE9I",
+    apiKey: process.env.GOOGLE_GENERATIVE_AI_API_KEY,
     authDomain: "prepwise-b66b6.firebaseapp.com",
     projectId: "prepwise-b66b6",
     storageBucket: "prepwise-b66b6.firebasestorage.app",
