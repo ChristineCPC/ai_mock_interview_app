@@ -2,9 +2,10 @@
 import { initializeApp, getApp, getApps } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import {getFirestore} from "firebase/firestore";
+import "../.env.local"
 
 const firebaseConfig = {
-    apiKey: process.env.GOOGLE_GENERATIVE_AI_API_KEY,
+    apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
     authDomain: "prepwise-b66b6.firebaseapp.com",
     projectId: "prepwise-b66b6",
     storageBucket: "prepwise-b66b6.firebasestorage.app",
